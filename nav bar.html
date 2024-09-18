@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day4 task1</title>
+    <style>
+        .nav{
+            background-color: rgb(70, 77, 83);
+            color: white;
+            padding: 0px 15px;
+            top: 0px;
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            height: 6vh;
+            font-size: 20px;
+            align-content: center; 
+            letter-spacing: 1%;
+            overflow-x: scroll;
+            overflow-y: hidden; 
+            scrollbar-width: none; 
+            white-space: nowrap; 
+        }
+       li{
+            margin-right: 50px;
+        }
+        .last{
+            padding-right: 50px;
+        }
+        li:hover{
+            background-color: rgba(12, 11, 11, 0.832);
+        }
+        body{
+            background-color: rgb(60, 55, 55);
+            width: 100%;
+            height: 3000px;
+            display: inline-block;
+            margin: px;
+            justify-items: center;
+        }
+        h4{
+           width: px;
+           margin: 2px;
+           align-items: center;
+           background-color: black;
+           color: white;
+           padding: 5px 5px;
+           border-radius: 15px;
+        }
+        .p1{
+            background-color: palevioletred;
+            padding: 20px;
+            width: 40%;
+            border: 80px;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 0px 2px black;
+            display: inline-block; 
+            margin: 80px;
+        }
+        .p2{
+            background-color: yellow;
+            padding: 20px;
+            width: 40%;
+            border: 80px;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 0px 2px black;
+            flex-direction: row;
+            position: static;
+            margin: 80px;
+            display: inline-block;
+        }
+        .p3{
+            background-color: lightblue;
+            padding: 20px;
+            width: 40%;
+            border: 80px;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 0px 2px black;
+            flex-direction: row;
+            position: static;
+            margin: 80px;
+            display: inline-block;
+        }
+        .p4{
+            background-color: lightblue;
+            padding: 20px;
+            width: 40%;
+            border: 80px;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 0px 2px black;
+            flex-direction: row;
+            position: static;
+            margin: 80px;
+            display: inline-block;
+        }
+        .p5{
+            background-color: blue;
+            padding: 20px;
+            width: 40%;
+            border: 80px;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 0px 2px black;
+            flex-direction: row;
+            position: static;
+            margin: 80px;
+            display: inline-block;
+        }
+        .p6{
+            background-color: blanchedalmond;
+            padding: 20px;
+            width: 40%;
+            border: 80px;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 0px 2px black;
+            flex-direction: row;
+            position: static;
+            margin: 80px;
+            display: inline-block;
+        }
+        .p7{
+            background-color: lightpink;
+            width: 40%;
+            height:80px ;
+            text-align: center;
+            padding: 20px;
+            margin: 80px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p8{
+            background-color: rgb(195, 204, 64);
+            width: 40%;
+            height:80px ;
+            text-align: center;
+            padding: 20px;
+            margin: 80px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p9{
+            background-color: rgb(242, 245, 199);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p10{
+            background-color: rgb(19, 231, 115);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }   
+        .p11{
+            background-color: rgb(42, 244, 238);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+            .p12{
+            background-color: rgb(19, 231, 115);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }     
+        .p13{
+            background-color: rgb(193, 199, 8);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p14{
+            background-color: rgb(145, 150, 147);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p15{
+            background-color: rgb(121, 185, 150);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p16{
+            background-color: rgb(45, 125, 217);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p17{
+            background-color: rgb(226, 127, 225);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p18{
+            background-color: rgb(200, 232, 60);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p19{
+            background-color: rgb(187, 189, 188);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p20{
+            background-color: rgb(240, 238, 244);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p21{
+            background-color: rgb(233, 212, 229);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p22{
+            background-color: rgb(225, 198, 231);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p23{
+            background-color: rgb(224, 237, 51);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p24{
+            background-color: rgb(210, 167, 241);
+            width: 15%;
+            height:40px ;
+            text-align: center;
+            padding: 20px;
+            margin: 70px;
+            font-size: 40px;
+            display: inline-block;
+        }
+        .p{
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            width: 300px;
+            text-align: center;
+            position:sticky;
+            margin-left: 260px;
+            margin-bottom: 10px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="nav">
+        <ul style="display: flex; list-style-type: none;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>SQL</li>
+            <li>PYTHON</li>
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>HOW TO</li>
+            <li>W3.CSS</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>BOOTSTRAP</li>
+            <li>REACT</li>
+            <li>MYSQL</li>
+            <li>JQUERY</li>
+            <li>EXCEL</li>
+            <li>XML</li>
+            <li>DJANGO</li>
+            <li>NODEJS</li>
+            <li>R</li>
+            <li>TYPESCRIPT</li>
+            <li>ANGULAR</li>
+            <li>GIT</li>
+            <li>POSTGRESQL</li>
+            <li>MANGODB</li>
+            <li>ASP</li>
+            <li>AI</li>
+            <li>GO</li>
+            <li>KOTLIN</li>
+            <li>SASS</li>
+            <li>VUE</li>
+            <li>DSA</li>
+            <li>GEN AI</li>
+            <li>SCIPY</li>
+            <li>AWS</li>
+            <li>CYBERS</li>
+            <li>CYBERSECURITY</li>
+            <li class="last">DATA SCIENCE</li>
+        </ul>
+    </div>
+   <div class="p1">PHP
+   <p>A Web server programming language</p>
+   <div class="p">Learn PHP</div>
+   </div>
+   <div class="p2">jQuery
+    <p>A JS library for developing web pages</p>
+    <div class="p">Learn jQuery</div>
+</div>
+<div class="p3">Java
+    <p>A programming language</p>
+    <div class="p">Learn Java</div>
+    </div>
+    <div class="p4">c++
+     <p>A programming language</p>
+     <div class="p">Learn c++</div>
+    </div>
+    <div class="p5">W3.CSS
+        <p>A CSS framework for faster and better responsive</p>
+        <div class="p">Learn W3.CSS</div>
+        </div>
+        <div class="p6">Bootstrap
+         <p>A CSS framework for designing better web pages</p>
+         <div class="p">Learn Bootstrap</div>
+        </div>
+        <div class="p7">C</div>
+               <div class="p8">C#</div>
+               <div class="p9">R</div>
+               <div class="p10">Kotlin</div>
+               <div class="p11">Node.js</div>
+               <div class="p12">React</div>
+               <div class="p13">JSON</div>
+               <div class="p14">vue</div>
+               <div class="p15">MySQL</div>
+               <div class="p16">XML</div>
+               <div class="p17">Sass</div>
+               <div class="p18">Icons</div>
+               <div class="p19">RWD</div>
+               <div class="p20">Graphics</div>
+               <div class="p21">svg</div>
+               <div class="p22">canvas</div>
+               <div class="p23">Rassiberry Pi</div>
+               <div class="p24">Cyber Security</div>
+</body>
+</html>
+</body>
+</html>

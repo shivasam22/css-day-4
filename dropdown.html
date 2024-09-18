@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            background-color: rgb(190, 163, 25);
+            color: white;
+            font-size: 45px;
+        }
+        li{
+            list-style-type: none;
+            background-color: rgb(238, 183, 226);
+            padding: 20px;   
+        }
+        .b{
+            display: none;
+        }
+       
+        .a:focus + .b{
+            display: block;
+        }
+       
+    </style>
+</head>
+<body>
+   <center><div>
+        <button class="a">Menu</button>
+         <div class="b">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+         </div>
+    </div>
+   </center>
+</body>
+</html>
